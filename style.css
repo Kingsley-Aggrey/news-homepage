@@ -1,0 +1,333 @@
+* {
+    font-family: 'Inter-Variable';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 9rem;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    width: 91%;
+    margin-top: 1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menuLinks {
+    display: flex;
+}
+
+
+
+.menuLinks a {
+    text-decoration: none;
+    color: hsl(249, 8%, 31%);
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.menuLinks a:hover {
+    transition-duration: 0.3s;
+    color: hsl(3, 36%, 55%);
+}
+
+main {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.headlines {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.headlines .home {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headlines .home .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headlines .home .info>h1 {
+    font-size: 3.5rem;
+    padding-top: 0.5rem;
+    text-transform: capitalize;
+    width: 45%;
+    margin: 0;
+}
+
+.headlines .home .info>div {
+    width: 50%;
+}
+
+
+.headlines .home .info>div>p {
+    font-size: 1.3rem;
+    color: hsl(237, 10%, 61%);
+    padding: 0;
+    margin: 0.8rem 0;
+}
+
+
+.headlines .home .info>div>button {
+    background-color: hsl(3, 54%, 48%);
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.headlines .home .info>div>button:hover {
+    transition-duration: 0.3s;
+    background-color: hsl(240, 100%, 5%);
+}
+
+.headlines .home .img {
+    background-image: url("./assets/images/image-web-3-desktop.jpg");
+    position: relative;
+    width: 100%;
+    height: 55%;
+    image-rendering: pixelated;
+}
+
+.headlines .new {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 25%;
+    background-color: hsl(240, 100%, 5%);
+}
+
+.headlines .new h1 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    color: hsl(35, 76%, 62%);
+    font-weight: bolder;
+}
+
+.headlines .new>a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.4rem;
+    color: white;
+}
+
+.headlines .new>a:hover {
+    transition-duration: 0.3s;
+    color: hsl(35, 76%, 62%);
+    cursor: pointer;
+}
+
+.headlines .new>p {
+    font-size: 1.05rem;
+    color: hsl(236, 12%, 76%);
+    padding: 0;
+    margin: 0.8rem 0;
+}
+
+.headlines .new>hr {
+    width: 100%;
+    background-color: hsla(236, 12%, 76%, 0.562);
+    height: 1px;
+    border: none;
+    margin: 0.8rem 0;
+}
+
+.trendings {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trendings .trendCard {
+    display: flex;
+    width: 23rem;
+}
+
+.trendings .trendCard img {
+    width: 7rem;
+}
+
+.trendings .trendCard .info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.trendCard .info span {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: hsl(237, 10%, 61%);
+}
+
+.trendCard .info p {
+    font-size: 1.1rem;
+}
+
+.trendCard .info .title {
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding: 0.4rem 0;
+    margin: 0;
+}
+
+.trendCard .info .title:hover {
+    cursor: pointer;
+    color: hsl(3, 54%, 48%);
+}
+
+.attribution {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (max-width: 850px) {
+    .menu {
+        display: none;
+    }
+
+    body {
+        padding: 0.5rem 1rem;
+    }
+
+    .mobile-menu {
+        transition-duration: 0.5s;
+        position: absolute;
+        flex-direction: column;
+        background-color: rgba(53, 51, 51, 0.37);
+        right: 0;
+        left: 0px;
+        bottom: 0;
+        top: 0px;
+        z-index: 5;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu .menuLinks {
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        right: 0;
+        left: 120px;
+        bottom: 0;
+        top: 0;
+        padding: 1rem;
+        z-index: 5;
+    }
+
+    .mobile-menu .menuLinks img {
+        width: 2rem;
+        align-self: flex-end;
+
+        margin-bottom: 4rem;
+        cursor: pointer;
+    }
+
+    .mobile-menu .menuLinks a {
+        font-size: 1.6rem;
+        margin: 0.5rem 0;
+
+    }
+
+    .menu-active {
+        display: block !important;
+    }
+
+    .headlines {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .headlines .home {
+        width: 100%;
+    }
+
+    .headlines .home .info {
+        flex-direction: column;
+    }
+
+    .headlines .home .info>h1 {
+        width: 100%;
+    }
+
+    .headlines .home .info>div {
+        width: 100%;
+    }
+
+    .headlines .home .img {
+        position: relative;
+        background-image: url("./assets/images/image-web-3-mobile.jpg");
+
+        image-rendering: pixelated;
+        width: 100%;
+        height: 37.5rem !important;
+    }
+
+    .headlines .new {
+        margin: 2rem 0;
+        position: relative;
+        width: 91%;
+        padding: 1rem;
+    }
+
+    .trendings {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .trendings .trendCard {
+        margin: 1rem 0;
+    }
+
+    .attribution {
+        flex-direction: column;
+    }
+}
