@@ -182,11 +182,11 @@ main {
 
 .trendings .trendCard {
     display: flex;
-    width: 23rem;
+    width: 24rem;
 }
 
 .trendings .trendCard img {
-    width: 7rem;
+    width: 6rem;
 }
 
 .trendings .trendCard .info {
@@ -202,13 +202,13 @@ main {
 }
 
 .trendCard .info p {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .trendCard .info .title {
     text-decoration: none;
     color: hsl(240, 100%, 5%);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 900;
     padding: 0.4rem 0;
     margin: 0;
