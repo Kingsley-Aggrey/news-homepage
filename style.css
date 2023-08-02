@@ -80,7 +80,7 @@ main {
 }
 
 .headlines .home .info>h1 {
-    font-size: 3.5rem;
+    font-size: 3.1rem;
     padding-top: 0.5rem;
     text-transform: capitalize;
     width: 45%;
@@ -93,7 +93,7 @@ main {
 
 
 .headlines .home .info>div>p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: hsl(237, 10%, 61%);
     padding: 0;
     margin: 0.8rem 0;
@@ -145,7 +145,7 @@ main {
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 0;
     margin: 0;
     margin-top: 1.4rem;
@@ -159,7 +159,7 @@ main {
 }
 
 .headlines .new>p {
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: hsl(236, 12%, 76%);
     padding: 0;
     margin: 0.8rem 0;
